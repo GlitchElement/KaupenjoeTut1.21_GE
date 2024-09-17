@@ -1,6 +1,7 @@
 package net.glielem.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.glielem.tutorialmod.Item.ModCreativeModeTabs;
 import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,11 +30,12 @@ public class TutorialMod {
 
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
