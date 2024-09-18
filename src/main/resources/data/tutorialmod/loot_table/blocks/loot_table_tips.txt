@@ -1,0 +1,4 @@
+copy paste any block json and change only block name
+drops block itself when broken
+
+unless ores
