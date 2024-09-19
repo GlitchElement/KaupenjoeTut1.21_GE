@@ -1,5 +1,6 @@
 package net.glielem.tutorialmod.Item;
 
+import net.glielem.tutorialmod.Item.custom.ChiselItem;
 import net.glielem.tutorialmod.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,6 +17,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
