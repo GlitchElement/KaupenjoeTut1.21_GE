@@ -3,13 +3,19 @@
   "item.tutorialmod.raw_alexandrite": "Raw Alexandrite",
 
   "item.tutorialmod.chisel": "Chisel",
+  "tooltip.tutorialmod.chisel": "Press §9Shift§r for more Information.",
+  "tooltip.tutorialmod.chisel.shift_down": "This Item changes certain Blocks",
+
   "item.tutorialmod.kohlrabi": "Kohlrabi",
+  "tooltip.tutorialmod.kohlrabi": "This tastes GREAT!",
+
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
 
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Raw Alexandrite Block",
 
   "block.tutorialmod.magic_block": "Magic Block",
+  "tooltip.tutorialmod.magic_block.tooltip": "This Block is quite §9MAGICAL§r",
 
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
