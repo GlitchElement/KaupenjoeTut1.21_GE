@@ -41,6 +41,21 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get(), ModItems.RAW_ALEXANDRITE.get(),
                         2,6));
+
+        dropSelf(ModBlocks.ALEXANDRITE_STAIRS.get());
+        this.add(ModBlocks.ALEXANDRITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ALEXANDRITE_SLAB.get())); //for more than 2 slab in one block
+
+        dropSelf(ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.ALEXANDRITE_BUTTON.get());
+
+        dropSelf(ModBlocks.ALEXANDRITE_FENCE.get());
+        dropSelf(ModBlocks.ALEXANDRITE_FENCE_GATE.get());
+        dropSelf(ModBlocks.ALEXANDRITE_WALL.get());
+
+        this.add(ModBlocks.ALEXANDRITE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.ALEXANDRITE_DOOR.get())); //for whole door covering 2 blocks
+        dropSelf(ModBlocks.ALEXANDRITE_TRAPDOOR.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
