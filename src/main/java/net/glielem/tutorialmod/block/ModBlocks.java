@@ -2,6 +2,7 @@ package net.glielem.tutorialmod.block;
 
 import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
+import net.glielem.tutorialmod.block.custom.AlexandriteLampBlock;
 import net.glielem.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -72,6 +73,11 @@ public class ModBlocks {
     public static final RegistryObject<TrapDoorBlock> ALEXANDRITE_TRAPDOOR = registerBlock("alexandrite_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+
+
+    public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
+            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0)));
 
 //---------------------------------------------------------------------------------------------------------
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
