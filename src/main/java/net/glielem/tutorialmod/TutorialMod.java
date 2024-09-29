@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.glielem.tutorialmod.Item.ModCreativeModeTabs;
 import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.block.ModBlocks;
+import net.glielem.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,6 +40,8 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
