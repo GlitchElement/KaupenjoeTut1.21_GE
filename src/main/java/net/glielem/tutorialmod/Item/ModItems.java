@@ -2,6 +2,7 @@ package net.glielem.tutorialmod.Item;
 
 import net.glielem.tutorialmod.Item.custom.ChiselItem;
 import net.glielem.tutorialmod.Item.custom.FuelItem;
+import net.glielem.tutorialmod.Item.custom.HammerItem;
 import net.glielem.tutorialmod.TutorialMod;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -58,6 +59,10 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.ALEXANDRITE,0,-3.0f))));
 
+
+    public static final RegistryObject<Item> ALEXANDRITE_HAMMER = ITEMS.register("alexandrite_hammer",
+            () -> new HammerItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ALEXANDRITE,7,-3.5f))));
 
 
     public static void register(IEventBus eventBus){
