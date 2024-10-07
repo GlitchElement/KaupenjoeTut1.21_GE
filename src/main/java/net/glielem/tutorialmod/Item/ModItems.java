@@ -3,6 +3,7 @@ package net.glielem.tutorialmod.Item;
 import net.glielem.tutorialmod.Item.custom.ChiselItem;
 import net.glielem.tutorialmod.Item.custom.FuelItem;
 import net.glielem.tutorialmod.Item.custom.HammerItem;
+import net.glielem.tutorialmod.Item.custom.ModArmorItem;
 import net.glielem.tutorialmod.TutorialMod;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -66,7 +67,7 @@ public class ModItems {
 
 //armor
     public static final RegistryObject<Item> ALEXANDRITE_HELMET = ITEMS.register("alexandrite_helmet",
-            () -> new ArmorItem(ModArmorMaterials.ALEXANDRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.ALEXANDRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
 
         public static final RegistryObject<Item> ALEXANDRITE_CHESTPLATE = ITEMS.register("alexandrite_chestplate",
