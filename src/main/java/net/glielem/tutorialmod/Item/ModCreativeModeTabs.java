@@ -38,6 +38,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_LEGGINGS.get());
                         output.accept(ModItems.ALEXANDRITE_BOOTS.get());
 
+                        output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
+
 
                     }).build());
 
