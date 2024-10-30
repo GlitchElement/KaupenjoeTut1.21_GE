@@ -5,6 +5,7 @@ import net.glielem.tutorialmod.Item.ModCreativeModeTabs;
 import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.glielem.tutorialmod.component.ModDataComponentTypes;
+import net.glielem.tutorialmod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -78,7 +79,7 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }
