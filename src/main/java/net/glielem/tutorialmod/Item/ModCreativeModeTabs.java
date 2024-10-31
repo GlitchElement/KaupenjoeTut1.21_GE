@@ -42,6 +42,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
 
+                        output.accept(ModItems.KAUPEN_BOW.get());
+
 
                     }).build());
 

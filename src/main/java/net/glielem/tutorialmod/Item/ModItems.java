@@ -94,6 +94,10 @@ public class ModItems {
                 ITEMS.register("kaupen_armor_trim_smithing_template",
                 () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID,"kaupen")));
 
+        //bow ep 22
+        public static final RegistryObject<Item> KAUPEN_BOW = ITEMS.register("kaupen_bow",
+                () -> new BowItem(new Item.Properties().durability(500)));
+
 //----------------------------------------------------------------------------------
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
