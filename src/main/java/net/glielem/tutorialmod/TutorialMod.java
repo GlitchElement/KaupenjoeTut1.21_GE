@@ -5,6 +5,7 @@ import net.glielem.tutorialmod.Item.ModCreativeModeTabs;
 import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.glielem.tutorialmod.component.ModDataComponentTypes;
+import net.glielem.tutorialmod.sound.ModSounds;
 import net.glielem.tutorialmod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -43,6 +44,7 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

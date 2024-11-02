@@ -4,6 +4,7 @@ import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
 import net.glielem.tutorialmod.block.custom.AlexandriteLampBlock;
 import net.glielem.tutorialmod.block.custom.MagicBlock;
+import net.glielem.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -38,7 +39,8 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()
+                    .sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     //Stairs,Slab
     public static final RegistryObject<StairBlock> ALEXANDRITE_STAIRS = registerBlock("alexandrite_stairs",
