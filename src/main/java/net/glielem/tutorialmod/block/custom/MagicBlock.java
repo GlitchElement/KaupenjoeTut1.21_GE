@@ -1,6 +1,5 @@
 package net.glielem.tutorialmod.block.custom;
 
-import net.glielem.tutorialmod.Item.ModItems;
 import net.glielem.tutorialmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

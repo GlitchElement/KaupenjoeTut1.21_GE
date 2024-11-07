@@ -1,7 +1,7 @@
 package net.glielem.tutorialmod.trim;
 
 import net.glielem.tutorialmod.TutorialMod;
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModItems;
 import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;

@@ -1,6 +1,6 @@
 package net.glielem.tutorialmod.datagen;
 
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.minecraft.core.HolderLookup;

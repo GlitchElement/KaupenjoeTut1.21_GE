@@ -1,12 +1,11 @@
 package net.glielem.tutorialmod.util;
 
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
 import net.glielem.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 
 public class ModItemProperties {
     public static void addCustomItemProperties(){

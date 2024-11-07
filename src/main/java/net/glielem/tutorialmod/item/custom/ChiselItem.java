@@ -1,4 +1,4 @@
-package net.glielem.tutorialmod.Item.custom;
+package net.glielem.tutorialmod.item.custom;
 
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.glielem.tutorialmod.component.ModDataComponentTypes;
@@ -7,7 +7,6 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;

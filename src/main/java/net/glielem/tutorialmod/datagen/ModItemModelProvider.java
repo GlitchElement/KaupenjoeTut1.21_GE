@@ -1,6 +1,6 @@
 package net.glielem.tutorialmod.datagen;
 
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
@@ -71,6 +71,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
         basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
 
 //--------------------------------------------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 package net.glielem.tutorialmod.event;
 
 import net.glielem.tutorialmod.TutorialMod;
-import net.glielem.tutorialmod.Item.custom.HammerItem;
+import net.glielem.tutorialmod.item.custom.HammerItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;

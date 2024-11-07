@@ -1,8 +1,8 @@
 package net.glielem.tutorialmod;
 
 import com.mojang.logging.LogUtils;
-import net.glielem.tutorialmod.Item.ModCreativeModeTabs;
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModCreativeModeTabs;
+import net.glielem.tutorialmod.item.ModItems;
 import net.glielem.tutorialmod.block.ModBlocks;
 import net.glielem.tutorialmod.component.ModDataComponentTypes;
 import net.glielem.tutorialmod.sound.ModSounds;

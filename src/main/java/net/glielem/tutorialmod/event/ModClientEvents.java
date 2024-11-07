@@ -1,6 +1,6 @@
 package net.glielem.tutorialmod.event;
 
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ComputeFovModifierEvent;

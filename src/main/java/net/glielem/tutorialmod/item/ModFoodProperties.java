@@ -1,4 +1,4 @@
-package net.glielem.tutorialmod.Item;
+package net.glielem.tutorialmod.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

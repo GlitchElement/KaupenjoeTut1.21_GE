@@ -1,4 +1,4 @@
-package net.glielem.tutorialmod.Item;
+package net.glielem.tutorialmod.item;
 
 import net.glielem.tutorialmod.TutorialMod;
 import net.glielem.tutorialmod.block.ModBlocks;
@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
 
                         output.accept(ModItems.KAUPEN_BOW.get());
+
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
 
                     }).build());

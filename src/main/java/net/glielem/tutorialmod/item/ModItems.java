@@ -1,10 +1,11 @@
-package net.glielem.tutorialmod.Item;
+package net.glielem.tutorialmod.item;
 
-import net.glielem.tutorialmod.Item.custom.ChiselItem;
-import net.glielem.tutorialmod.Item.custom.FuelItem;
-import net.glielem.tutorialmod.Item.custom.HammerItem;
-import net.glielem.tutorialmod.Item.custom.ModArmorItem;
 import net.glielem.tutorialmod.TutorialMod;
+import net.glielem.tutorialmod.item.custom.ChiselItem;
+import net.glielem.tutorialmod.item.custom.FuelItem;
+import net.glielem.tutorialmod.item.custom.HammerItem;
+import net.glielem.tutorialmod.item.custom.ModArmorItem;
+import net.glielem.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -97,6 +98,10 @@ public class ModItems {
         //bow ep 22
         public static final RegistryObject<Item> KAUPEN_BOW = ITEMS.register("kaupen_bow",
                 () -> new BowItem(new Item.Properties().durability(500)));
+
+        //music disc 25
+        public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+                () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
 //----------------------------------------------------------------------------------
     public static void register(IEventBus eventBus){

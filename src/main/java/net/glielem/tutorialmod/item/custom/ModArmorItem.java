@@ -1,7 +1,7 @@
-package net.glielem.tutorialmod.Item.custom;
+package net.glielem.tutorialmod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
-import net.glielem.tutorialmod.Item.ModArmorMaterials;
+import net.glielem.tutorialmod.item.ModArmorMaterials;
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

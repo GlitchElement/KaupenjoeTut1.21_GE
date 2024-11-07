@@ -1,6 +1,6 @@
 package net.glielem.tutorialmod.block;
 
-import net.glielem.tutorialmod.Item.ModItems;
+import net.glielem.tutorialmod.item.ModItems;
 import net.glielem.tutorialmod.TutorialMod;
 import net.glielem.tutorialmod.block.custom.AlexandriteLampBlock;
 import net.glielem.tutorialmod.block.custom.MagicBlock;

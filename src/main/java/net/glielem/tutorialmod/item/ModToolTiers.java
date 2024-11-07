@@ -1,4 +1,4 @@
-package net.glielem.tutorialmod.Item;
+package net.glielem.tutorialmod.item;
 
 import net.glielem.tutorialmod.util.ModTags;
 import net.minecraft.world.item.Tier;
