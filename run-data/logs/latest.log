@@ -1,0 +1,38 @@
+[15Nov2024 01:26:29.395] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\Dell\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, tutorialmod, --all, --output, D:\MCForge1.21\KaupenjoeTut1.21\src\generated\resources, --existing, D:\MCForge1.21\KaupenjoeTut1.21\src\main\resources]
+[15Nov2024 01:26:29.400] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+[15Nov2024 01:26:29.402] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[15Nov2024 01:26:29.619] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[15Nov2024 01:26:29.837] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/Dell/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[15Nov2024 01:26:31.208] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[15Nov2024 01:26:32.369] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\Dell\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, tutorialmod, --all, --output, D:\MCForge1.21\KaupenjoeTut1.21\src\generated\resources, --existing, D:\MCForge1.21\KaupenjoeTut1.21\src\main\resources]
+[15Nov2024 01:26:40.163] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[15Nov2024 01:26:40.163] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[15Nov2024 01:26:40.196] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[15Nov2024 01:26:41.253] [modloading-worker-0/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: tutorialmod, class net.glielem.tutorialmod.TutorialMod
+java.lang.ExceptionInInitializerError: null
+	at net.minecraftforge.registries.RegistryObject.updateReference(RegistryObject.java:243) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar:?]
+	at net.minecraftforge.registries.RegistryObject.<init>(RegistryObject.java:175) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar:?]
+	at net.minecraftforge.registries.RegistryObject.create(RegistryObject.java:62) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar:?]
+	at net.minecraftforge.registries.DeferredRegister.register(DeferredRegister.java:194) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar:?]
+	at net.glielem.tutorialmod.item.ModCreativeModeTabs.<clinit>(ModCreativeModeTabs.java:17) ~[main/:?]
+	at TRANSFORMER/tutorialmod@0.0.1/net.glielem.tutorialmod.TutorialMod.<init>(TutorialMod.java:41) ~[main/:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at LAYER PLUGIN/net.minecraftforge.javafmlmod@1.21-51.0.33/net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:66) ~[javafmllanguage-1.21-51.0.33.jar!/:51.0.33]
+	at LAYER PLUGIN/net.minecraftforge.fmlcore@1.21-51.0.33/net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:125) ~[fmlcore-1.21-51.0.33.jar!/:1.0]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+Caused by: java.lang.IllegalArgumentException: Not bootstrapped (called from registry ResourceKey[minecraft:root / minecraft:game_event])
+	at net.minecraft.server.Bootstrap.createBootstrapException(Bootstrap.java:107) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/:?]
+	at net.minecraft.server.Bootstrap.checkBootstrapCalled(Bootstrap.java:100) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/:?]
+	at net.minecraft.core.registries.BuiltInRegistries.internalRegister(BuiltInRegistries.java:241) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/:?]
+	at net.minecraft.core.registries.BuiltInRegistries.registerDefaulted(BuiltInRegistries.java:229) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/:?]
+	at net.minecraft.core.registries.BuiltInRegistries.<clinit>(BuiltInRegistries.java:134) ~[forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/:?]
+	... 18 more
+[15Nov2024 01:26:41.265] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found
